@@ -1,7 +1,7 @@
 # Raspberry Pi Pico 2 W – Laboratory Projects
 
 A collection of embedded systems laboratory exercises developed using the **Raspberry Pi Pico 2 W** platform.  
-The projects focus on low-level embedded programming, hardware interfacing, communication protocols, and real-time systems concepts.
+The projects focus on low-level embedded programming, hardware interfacing, communication protocols, and real-time systems concepts.  
 The classes were prepared by the instructor Mateusz Szpetkowski from Wrocław UNiversity of Science & Technology.
 ---
 
