@@ -27,56 +27,93 @@ The exercises introduce practical aspects of:
 
 # Laboratory Exercises
 
-## Lab 2 – GPIO and Digital I/O
+# Laboratory Topics
 
-Introduction to fundamental microcontroller operations and digital signal handling.
+## Lab 2 – Clock Tree and Hardware Timers (RP2350)
 
-### Topics
-- GPIO configuration
-- LED control
-- Push-button input
-- Timing and delays
-- Basic embedded debugging
+Focus on low-level clock management and asynchronous timing mechanisms inside the RP2350 microcontroller.
 
----
+### Topics Covered
+- RP2350 Clock System
+- Clock Frequency Reading
+- External Crystal Oscillator (XOSC)
+- PLL Configuration and Reconfiguration
+- Hardware Timers
+- Non-blocking Embedded Systems
+- Edge Detection
+- Button Debouncing
+- UART Debugging
 
-## Lab 3 – Communication Interfaces
-
-Implementation of common embedded communication protocols.
-
-### Topics
-- UART communication
-- SPI communication
-- I2C communication
-- Serial debugging
-- Peripheral interfacing
-
----
-
-## Lab 4 – Sensors and Data Acquisition
-
-Working with external sensors and analog signal processing.
-
-### Topics
-- ADC (Analog-to-Digital Conversion)
-- Sensor integration
-- Signal acquisition
-- Real-time measurement systems
-- Data processing
+### Key Concepts
+- Reading and modifying `clk_sys`, `clk_peri`, and `clk_usb`
+- Switching clock sources safely
+- Configuring PLL to custom frequencies
+- Replacing blocking delays with hardware timers
+- Building responsive embedded applications
 
 ---
 
-## Lab 5 – Wireless and Edge Computing
+## Lab 3 – ADC and PWM
 
-Introduction to wireless communication and lightweight edge-device applications.
+Introduction to analog-to-digital conversion and hardware PWM signal generation.
 
-### Topics
-- Wi-Fi functionality
-- Bluetooth communication
-- Embedded networking basics
-- Edge computing concepts
-- Real-time wireless communication
+### Topics Covered
+- ADC (Analog-to-Digital Converter)
+- PWM (Pulse Width Modulation)
+- Internal Temperature Sensor
+- Potentiometer Input
+- LED Brightness Control
+- Software Noise Filtering
 
+### Key Concepts
+- Reading RP2350 internal temperature sensor
+- Voltage-to-temperature conversion
+- PWM duty cycle control
+- Real-time potentiometer dimming
+- ADC signal filtering and stabilization
+
+---
+
+## Lab 4 – I2C Communication (SHT30 Sensor on RP2350)
+
+Implementation of I2C communication and environmental sensor interfacing.
+
+### Topics Covered
+- I2C Bus Communication
+- Master-Slave Architecture
+- SHT30 Temperature & Humidity Sensor
+- Bitwise Operations
+- MSB / LSB Data Handling
+- Hardware Polling
+
+### Key Concepts
+- I2C device scanning
+- Sensor command transmission
+- Multi-byte data acquisition
+- Bit shifting and byte reconstruction
+- Raw sensor data conversion
+- Continuous environmental monitoring
+
+---
+
+## Lab 5 – Advanced I2C
+
+Advanced peripheral integration using multiple I2C devices and buses.
+
+### Topics Covered
+- EEPROM Communication
+- IMU (Accelerometer)
+- OLED SSD1306 Display
+- Multi-device I2C Systems
+- Multi-bus Configuration
+
+### Key Concepts
+- Non-volatile memory operations
+- Reading accelerometer axis data
+- Signed integer reconstruction (`int16_t`)
+- OLED graphical output
+- Real-time sensor dashboards
+- I2C bus separation (`i2c0` and `i2c1`)
 ---
 
 # Technologies Used
